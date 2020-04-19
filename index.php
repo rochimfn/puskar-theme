@@ -2,7 +2,7 @@
 
 <section class="section">
 	<div class="container">
-	<h1 class="title">
+	<h1 class="title has-text-white">
 	<?php
 		if(is_front_page() || is_home()){
 			echo get_bloginfo('name');
@@ -26,9 +26,9 @@
 		?>
 
 			<div class="column is-one-quarter">
-				<div class="card is-rounded">
+				<div class="card box">
 					<div class="card-image">
-						<figure class="image is-4by3">
+						<figure class="image is-fullwidth">
 							<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
 						</figure>
 					</div>

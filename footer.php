@@ -1,4 +1,4 @@
-	<footer class="has-text-centered">
+	<footer class="has-text-centered box">
         <div class="pt-1">
             by <a href="<?php echo get_option('website') ?>">HMSI</a>
         </div>
