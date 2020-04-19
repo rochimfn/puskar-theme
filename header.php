@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
     <meta name="author" content="<?php the_author(); ?>">
+    <link rel="icon" type="image/png" href="<?= get_stylesheet_directory_uri() . '/assets/favicon.png'; ?>">
     <?php wp_head(); ?>
   </head>
 
