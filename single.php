@@ -52,6 +52,8 @@
 										<br>
 										<p class="title is-5">Nama Perlombaan : <?php echo get_field('nama_perlombaan');?></p>
 										<p class="title is-5">Penyelenggara : <?php echo get_field('penyelenggara');?></p>
+										<p class="title is-5">Nama Team : <?php echo get_field('nama_team');?></p>
+										<p class="title is-5">Kontak : <?php echo get_field('kontak');?></p>
 									</div>
 								</div>
 							</div>

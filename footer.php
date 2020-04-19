@@ -7,6 +7,7 @@
             <a href="<?php echo get_option('twitter') ?>"><i class="fab fa-twitter is-size-3 m-1"></i></a>
             <a href="<?php echo get_option('instagram') ?>"><i class="fab fa-instagram is-size-3 m-1"></i></a>
             <a href="<?php echo get_option('youtube') ?>"><i class="fab fa-youtube is-size-3 m-1"></i></a>
+            <a href="<?php echo get_option('website') ?>"><i class="fas fa-globe-asia is-size-3 m-1"></i></a>
         </div>
 	</footer>
 	<script>
