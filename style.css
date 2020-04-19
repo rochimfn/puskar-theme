@@ -34,6 +34,15 @@ footer.fab {
 .m-1 {
 	margin: 1rem;
 }
+.p-0 {
+	padding: 0 !important;
+}
+.p-card {
+	padding: 0.5rem !important;
+}
+.p-1 {
+	padding: 1rem;
+}
 .pt-1 {
 	padding-top: 1rem;
 }

@@ -25,12 +25,16 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a class="navbar-item" href="<?php echo get_bloginfo( 'wpurl' ); ?>">
-                    Home
+                   Home
                 </a>
-
-                <a class="navbar-item" href="<?php echo get_bloginfo( 'wpurl'); ?>/tentang">
-                    Tentang
+                <?php
+                    $pages = get_pages( array( '' ));
+                    foreach ($pages as $page) :
+                ?>
+                <a class="navbar-item" href="<?php echo get_page_link($page->ID); ?>">
+                    <?php echo $page->post_title;?>
                 </a>
+                <?php endforeach ?>
             </div>
 
             <div class="navbar-end">

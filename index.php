@@ -26,7 +26,7 @@
 		?>
 
 			<div class="column is-one-quarter">
-				<div class="card box">
+				<div class="card box p-0">
 					<div class="card-image">
 						<figure class="image is-fullwidth">
 							<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
@@ -37,10 +37,23 @@
 							<div class="media-content">
 								<a href="<?php the_permalink();?>" class="title is-4"><?php the_title(); ?></a>
 								<br>
-								<br>
-								<a href="<?php echo get_bloginfo( 'wpurl' ); ?>/category/<?php echo esc_html(
-								        get_the_category()[0]->slug );?>" class="subtitle is-6 button is-blue"><?php
-                                    echo esc_html( get_the_category()[0]->name );?></a>
+								
+								<?php 
+								$categories = get_the_category();
+								foreach ($categories as $category):
+								?>
+
+								<a href="<?php echo get_category_link( $category->term_id ); ?>" class="button is-small is-blue p-1">
+									<?php echo esc_html( $category->name );?>
+								</a>
+								<?php endforeach;?>
+
+								<?php if( has_excerpt()) :?>
+								<br><br>
+								<p class="is-size-6">
+									<?php echo get_the_excerpt();?>
+								</p>
+								<?php endif;?>
 							</div>
 						</div>
 					</div>
@@ -49,6 +62,10 @@
 
 		<?php endwhile;endif;?>
 		</div>
+		<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+			<div class="button is-white" ><?php next_posts_link( 'Older posts' ); ?></div>
+			<div class="button is-white" ><?php previous_posts_link( 'Newer posts' ); ?></div>
+		</nav>
 	</div>
 </section>
 <?php get_footer(); ?>
