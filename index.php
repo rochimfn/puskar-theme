@@ -59,12 +59,16 @@
 					</div>
 				</div>
 			</div>
-
+		
 		<?php endwhile;endif;?>
 		</div>
 		<nav class="pagination is-centered" role="navigation" aria-label="pagination">
-			<div class="button is-white" ><?php next_posts_link( 'Older posts' ); ?></div>
-			<div class="button is-white" ><?php previous_posts_link( 'Newer posts' ); ?></div>
+			<?php if( !empty( get_previous_posts_link() ) ) :?>
+			  <a class="button is-outlined" href="<?= get_previous_posts_page_link() ?> ">Previous posts</a>
+			<?php endif?>
+			<?php if( !empty( get_next_posts_link() ) ) :?>
+			  <a class="button is-outlined" href="<?= get_next_posts_page_link() ?>">Next posts</a>
+			<?php endif?>
 		</nav>
 	</div>
 </section>

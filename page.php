@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<section class="section">
+<section class="section bg-white container">
 	<div class="container">
 		<h1 class="title"><?php the_title(); ?></h1>
 			<div class="content">
