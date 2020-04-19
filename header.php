@@ -28,7 +28,7 @@
                     Home
                 </a>
 
-                <a class="navbar-item" href="<?php echo get_bloginfo( 'wpurl'); ?>/tentang"">
+                <a class="navbar-item" href="<?php echo get_bloginfo( 'wpurl'); ?>/tentang">
                     Tentang
                 </a>
             </div>
@@ -36,8 +36,12 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-blue" href="<?php echo get_bloginfo( 'wpurl'); ?>/login">
-                            Log in
+                        <a class="button is-blue" href="<?php echo get_dashboard_url();  ?>">
+                        <?php if(is_user_logged_in()) {
+                            echo 'Dashboard';
+                        } else {
+                            echo 'Log in';
+                        } ?>
                         </a>
                     </div>
                 </div>
