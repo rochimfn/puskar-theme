@@ -26,6 +26,9 @@ body {
 .navbar-item img {
 	max-height: 3.75rem !important;
 }
+#navbarBasicExample button {
+	margin: auto 5px;
+}
 .button.is-blue {
 	background-color: #4DABE0;
 	border-color: transparent;
@@ -72,9 +75,9 @@ footer {
 	/*-webkit-box-shadow: 0px -5px 20px 1px rgba(214,214,214,1);*/
 	/*-moz-box-shadow: 0px -5px 20px 1px rgba(214,214,214,1);*/
 	/*box-shadow: 0px -5px 20px 1px rgba(214,214,214,1);*/
-	position: relative;
-	background-color: #ffffff;
-	bottom: -100px;
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	margin-bottom: 0 !important;
 }
 
 .fa-facebook-f {
@@ -91,4 +94,24 @@ footer {
 }
 .fa-globe-asia {
 	color: #000;
+}
+.dark {
+	background-color: #363636 !important;
+	color: #fff !important;
+}
+footer.dark {
+	background-color: #363636;
+	color: #fff;
+}
+section.box.dark {
+	background-color: gray !important;
+	color: white;
+}
+div.box.dark {
+	background-color: gray !important;
+	color: white;
+}
+div.card-content.dark {
+	background-color: gray !important;
+	color: white;
 }

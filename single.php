@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<section class="section bg-white container box mt-5">
+<section class="section container box mt-5">
 	<div class="container">
 		<nav class="breadcrumb" aria-label="breadcrumbs">
 			<ul>

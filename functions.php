@@ -16,6 +16,7 @@ add_theme_support( 'title-tag' );
 function puskar_scripts() {
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'bulma', 'https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css' );
+    wp_enqueue_script( 'custom', get_template_directory_uri() . '/script.js', array(), false, true );
     wp_enqueue_script( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/js/all.js', true );
 }
 
