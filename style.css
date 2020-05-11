@@ -1,10 +1,10 @@
 /*
-Theme Name: Puskar Original Theme
+Theme Name: Puskar Original Theme with Dark Theme
 Theme URI: https://rochimfn.poteto.dev
 Author: Rochim Farul Noviyan
 Author URI: https://rochimfn.poteto.dev
 Description: Puskar Original Theme
-Version: 0.9
+Version: 0.91
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: 
@@ -25,9 +25,6 @@ body {
 }
 .navbar-item img {
 	max-height: 3.75rem !important;
-}
-#navbarBasicExample button {
-	margin: auto 5px;
 }
 .button.is-blue {
 	background-color: #4DABE0;
@@ -98,6 +95,9 @@ footer {
 .dark {
 	background-color: #363636 !important;
 	color: #fff !important;
+}
+.title.dark {
+	color: white;
 }
 footer.dark {
 	background-color: #363636;

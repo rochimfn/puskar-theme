@@ -36,12 +36,14 @@
                     <?php echo $page->post_title;?>
                 </a>
                 <?php endforeach ?>
-                <button class="button is-warning" id="dark-mode">
-                    <span class="icon">
-                    <i class="fas fa-moon"></i>
-                    </span>
-                    <span>Switch (beta)</span>
-                </button>
+                <div class="navbar-item">
+                    <button class="button is-warning" id="dark-mode">
+                        <span class="icon">
+                        <i class="fas fa-tshirt"></i>
+                        </span>
+                        <span>Switch</span>
+                    </button>
+                </div>
             </div>
 
             <div class="navbar-end">
