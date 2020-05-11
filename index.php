@@ -29,7 +29,9 @@
 				<div class="card box p-0">
 					<div class="card-image">
 						<figure class="image is-fullwidth">
-							<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
+							<a href="<?php the_permalink();?>">
+								<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
+							</a>
 						</figure>
 					</div>
 					<div class="card-content">

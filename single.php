@@ -19,7 +19,9 @@
 						<div class="card is-shadowless">
 							<div class="card-image">
 								<figure class="image is-fullwidth">
-									<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
+									<a href="<?php echo get_field('poster'); ?>">
+										<img src="<?php echo get_field('poster'); ?>" alt="Placeholder image">
+									</a>
 								</figure>
 							</div>
 							<div class="card-content">
