@@ -30,6 +30,7 @@ section.section {
 }
 .navbar-item img {
 	max-height: 3.75rem !important;
+	border-radius: 5px;
 }
 .button.is-blue {
 	background-color: #4DABE0;
