@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="navbar-end">
+            <!-- <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
                         <a class="button is-blue" href="<?php echo get_dashboard_url();  ?>">
@@ -58,6 +58,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
